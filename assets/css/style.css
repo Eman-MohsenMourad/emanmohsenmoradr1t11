@@ -9,7 +9,9 @@ body {
    
 
 }
-
+.active-item{
+    color: rgb(3, 47, 188);
+}
 .start {
     color: white;
 }
@@ -22,7 +24,7 @@ body {
     color: white;
 }
 
-.nav-link {
+.nav-link{
     color: white;
 }
 
@@ -34,17 +36,29 @@ body {
     font-size: 50px;
 }
 
-#home {
-    position: relative;
+#home {    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.5)),url('../../imgs/1.webp') no-repeat center center /cover;
+   /* position: relative;
     background-image: url('../../imgs/1.webp');
     background-repeat: no-repeat;
     background-size: cover;
 
     width: 100%;
-    height: 800px;
+    height: 800px;*/
 
 }
-
+.line1 , .line2 , .line3 {
+    width: 23px;
+    height: 3px;
+    margin: 5px;
+    transition: all .4s;
+}
+.menu-item {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #EEE;
+    transition: color .5s;
+}
 .navbar-nav {
     text-align: left;
    padding-right: 500px;
@@ -73,7 +87,7 @@ body {
     opacity: 0.5;
     margin-top: 250px;
     margin-left: 203px;
-    width: 275px;
+    width: 265px;
     height: 10px;
     color: white;
     font-weight: bold;
@@ -81,17 +95,19 @@ body {
 
 }
 
-ul.nav {
-    padding-left: 350px;
-    list-style: none;
-    background-color: white;
-
+.gallery-list-item {
+    color: #777;
+    cursor: pointer;
+    user-select: none;
 }
 
 .nav {
     margin-bottom: 20px;
 }
 
-.cust {
+.customers {
     background-color: black;
+}
+.active-item {
+    color: #0a36e2;
 }
